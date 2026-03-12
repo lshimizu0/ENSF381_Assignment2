@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="customize_order.js" defer></script>
+</head>
+
+<body>
+    <header id="page_header">
+        <div>
+            <div><img src="img/logo.jpeg" alt="Sweet Scoop Ice Cream Logo"></div>
+        </div>
+
+        <div>
+            <h3>Sweet Scoop Ice Cream</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu_view.html">Menu</a></li>
+        </ul>
+    </nav>
+
+    <main class="customize_order_main">
+        <h3 class="countdownTimer" id="countdownTimer"> Order Time Left: 15:00</h3>
+
+        <form action="order_summary.html">
+            <div>
+                <img src="img/icecream_banner.jpeg" alt="Banner image for customizing order" id="banner_img">
+            </div>
+
+            <h2>Vanilla Dream</h2>
+            <h3>Choose Type:</h3>
+
+            <input type="radio" id="type_cup" name="type" value="Cup">
+            <label for="type_cup">Cup</label><br><br>
+            <input type="radio" id="type_cone" name="type" value="Cone">
+            <label for="type_cone">Cone</label><br><br>
+            <button type="button" id="update_order_vanilla" value="submit_icecream_type">Submit Selection</button>
+
+            <h2>Chocolate Bliss</h2>
+            <h3>Select Toppings:</h3>
+
+            <input class="toppingSelect" type="checkbox" id="topping1" name="topping1" value="Sprinkles">
+            <label for="topping1">Sprinkles</label><br><br>
+            <input class="toppingSelect" type="checkbox" id="topping2" name="topping2" value="Chocolate Chips">
+            <label for="topping2">Chocolate Chips</label><br><br>
+            <input class="toppingSelect" type="checkbox" id="topping3" name="topping3" value="Whipped Cream">
+            <label for="topping3">Whipped Cream</label><br><br>
+            <button type="button" id="update_order_chocolate" value="submit_toppings">Submit Selection</button>
+
+            <br>
+            <p id="totalPrice" style="font-weight: bold;">Total Price: $6.00</p>
+            <button type="submit">Finish Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Scoop Ice Cream.</p>
+    </footer>
+</body>
+
+</html>
