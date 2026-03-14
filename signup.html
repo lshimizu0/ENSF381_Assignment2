@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Login</title>
+    <title>Signup</title>
 </head>
 
-<body>
+<body class="signup_page">
     <header id="page_header">
         <div>
             <div><img src="img/logo.jpeg" alt="Sweet Scoop Ice Cream Logo"></div>
@@ -25,34 +25,33 @@
         </ul>
     </nav>
 
-    <main class="login_main">
-        <div id="login_container">
-            <h2>Welcome Back!</h2>
-            <p>Please enter your username to log in.</p>
-            <form id="login_form" action="menu_view.html">
+    <main class="signup_main">
+        <div id="signup_container">
+            <h2>Signup</h2>
+            <form id="signup_form" action="menu_view.html">
                 <label for="username">Username:</label><br>
                 <input type="text" id="username" name="username" required><br><br>
 
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+
                 <label for="password">Password:</label><br>
-                <input type="password" id="email" name="password" required><br><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
                 
-                <div>
-                    <input type="checkbox" id="forgot_password" name="forgot_password" disabled>
-                    <label for="forgot_password">Forgot Password?</label><br><br>
-                </div>
 
-                <button type="button" id="login_button">Login</button> <br> <br>
+                <button type="button" id="signup_button">Signup</button> <br> <br>
 
-                <span>New User? </span><button type ="button" id="sign_up" onclick="window.location.href='signup.html'"> Create an Account</button>
             </form>
         </div>
     </main>
-
     <footer>
         <p>&copy; 2026 Sweet Scoop Ice Cream.</p>
     </footer>
 
-    <script src="login.js"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
